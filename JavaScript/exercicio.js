@@ -71,3 +71,77 @@ if (formaDePagamento === 1) {
 } else {
   console.log(preco + (preco * 0.10));
 }
+
+
+//Desafio: Somando Múltiplos
+let a = 0;
+let N = 0;
+
+function calculate_sum(a, N) {
+
+  m = N / a;
+  sum = m * (m + 1) / 2;
+  ans = a * sum;
+  return ans;
+}
+
+console.log(calculate_sum(9, 5));
+
+//Desafio: FizzBuzz
+let resultado = 5;
+
+function fizzBuzz(n) {
+
+  if (n % 15 == 0) {
+    return ("FizzBuzz");
+  } else if (n % 3 == 0) {
+    return ("Fizz");
+  } else if (n % 5 == 0) {
+    return ("Buzz");
+  } else {
+    return (n);
+  }
+}
+
+console.log(fizzBuzz(resultado));
+
+//Desafio: Uma Chamada Recursiva
+let n = 10;
+
+function somatorio(n) {
+  if (n == 0) {
+    return 0;
+  } else {
+    return n + somatorio(n - 1);
+  }
+}
+
+console.log(somatorio(n));
+
+//Desafio: Os Números São Iguais
+let A = 5;
+let B = 5;
+
+if (A == B) {
+  console.log("Sao iguais!");
+} else {
+  console.log("Nao sao iguais!");
+}
+
+//Desafio: Busca Sequencial
+let elementos = [64, 137, -16, 43, 67, 81, -90, 212, 10, 75];
+
+let valor = 43;
+
+encontrado = false;
+
+for (let i = 0; i < elementos.length; i++) {
+  if (elementos[i] == valor) {
+    encontrado = true;
+    console.log(`Achei ${elementos[i]} na posicao ${i}`);
+    break
+  }
+}
+if (!encontrado) {
+  console.log(`Numero ${valor} nao encontrado!`);
+}

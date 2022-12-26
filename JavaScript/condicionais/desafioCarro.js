@@ -8,12 +8,12 @@
 // 5 - Preço do Etanol;
 
 const precoEtanol = 4.5;
-const precoGasolina = 5.8;
+const precoGasolina = 5.35;
 const tipoCombustivel = "gasolina";
 const consumoPorKm = 10;
-const distanciaPorKm = 45;
+const distanciaPorKm = 195;
 
-if (tipoCombustivel === "etanol") {
+if (tipoCombustivel === "gasolina") {
   const valorTotal = (distanciaPorKm / consumoPorKm) * precoEtanol;
   console.log(valorTotal.toFixed(2));
 } else {
